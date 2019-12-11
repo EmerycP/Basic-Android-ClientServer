@@ -4,6 +4,7 @@ import com.emerycprimeau.exception.*;
 import com.emerycprimeau.model.Token;
 import com.emerycprimeau.model.User;
 import com.emerycprimeau.transfer.*;
+import com.google.gson.JsonParser;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Cookie;
@@ -64,6 +65,19 @@ public class WebService {
         bd.InitUsers();
     }
 
+    @POST
+    @Path("test")
+    public Boolean create (String user) throws NoMatch {
+        System.out.println("STRINNNNNNNGGGG      Nouveau utilisateur au nom de -> " + user);
+        return true;
+    }
+
+    @POST
+    @Path("create")
+    public Boolean create (LoginRequest user) throws NoMatch {
+        System.out.println("Nouveau utilisateur au nom de -> " + user.user);
+        return bd.create(user);
+    }
 
     @POST
     @Path("click")

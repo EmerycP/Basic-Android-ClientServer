@@ -1,10 +1,9 @@
-package com.emerycprimeau.model;
+package com.emerycp.client;
 
-import com.emerycprimeau.transfer.LoginRequest;
 
 import java.util.List;
 
-public class User{
+public class User {
     public int ID;
     public String name;
     public int count;

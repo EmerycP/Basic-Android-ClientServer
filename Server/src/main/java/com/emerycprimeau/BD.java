@@ -14,7 +14,7 @@ import java.util.*;
 public class BD {
 
     public static List<User> listUser = new ArrayList<>();
-
+    public static int UserId = 0;
 
     public static List<Token> listToken = new ArrayList<>();
     public static final String Cookie = "Cookie-cookie";
@@ -63,9 +63,18 @@ public class BD {
 
 
     public void InitUsers() {
-        listUser.add(new User(0, "George", 0 ));
-        listUser.add(new User(1, "Marc", 0 ));
-        listUser.add(new User(2, "Joris", 0 ));
-        listUser.add(new User(3, "Oli", 0 ));
+        listUser.add(new User(UserId++, "George", 0 ));
+        listUser.add(new User(UserId++, "Marc", 0 ));
+        listUser.add(new User(UserId++, "Joris", 0 ));
+        listUser.add(new User(UserId++, "Oli", 0 ));
+    }
+
+    public Boolean create(LoginRequest user) {
+        User u = new User();
+        u.name = user.user;
+        u.ID = UserId++;
+        u.count = 0;
+        listUser.add(u);
+        return true;
     }
 }
