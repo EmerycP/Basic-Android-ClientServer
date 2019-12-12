@@ -19,4 +19,10 @@ public interface Service {
 
     @GET("howmany/{id}")
     Call<User> toMany (@Path("id") int id);
+
+    @POST("createCookie")
+    Call<Token> toCookie();
+
+    @GET("deleteCookie")
+    Call<Boolean> toDelete ();
 }

@@ -48,20 +48,6 @@ public class BD {
     }
 
 
-    public Response creerCookie()
-    {
-//        String token = UUID.randomUUID().toString();
-//        NewCookie nC = new NewCookie(Cookie, token, "/","", "id token", 604800, true);
-//        listToken.add(new Token(token, s.ID, 604800));
-       return null;
-    }
-
-    public Response supprimerCookie()
-    {
-        return null;
-    }
-
-
     public void InitUsers() {
         listUser.add(new User(UserId++, "George", 0 ));
         listUser.add(new User(UserId++, "Marc", 0 ));

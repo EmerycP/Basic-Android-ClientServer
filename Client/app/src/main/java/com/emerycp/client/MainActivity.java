@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         Button btnMoney = findViewById(R.id.money);
         Button btnCombien = findViewById(R.id.combienBtn);
 
+        Button btnCookie = findViewById(R.id.Cookie);
+        Button btnManger = findViewById(R.id.Manger);
+
         final EditText etUser = findViewById(R.id.username);
         final TextView tvUser = findViewById(R.id.textUser);
 
@@ -125,5 +128,47 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnCookie.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                s.toCookie().enqueue(new Callback<Token>() {
+                    @Override
+                    public void onResponse(Call<Token> call, Response<Token> response) {
+                        if(response.isSuccessful())
+                        {
+                            Toast.makeText(getApplicationContext(), "Creation du cookie " + response.body().token, Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<Token> call, Throwable t) {
+
+                    }
+                });
+            }
+        });
+        btnManger.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                s.toDelete().enqueue(new Callback<Boolean>() {
+                    @Override
+                    public void onResponse(Call<Boolean> call, Response<Boolean> response) {
+                        if(response.isSuccessful())
+                        {
+                            Toast.makeText(getApplicationContext(), "Suppression du cookie", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<Boolean> call, Throwable t) {
+
+                    }
+                });
+            }
+        });
     }
 }

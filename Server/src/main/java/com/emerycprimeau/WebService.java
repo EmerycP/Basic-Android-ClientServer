@@ -4,10 +4,13 @@ import com.emerycprimeau.exception.*;
 import com.emerycprimeau.model.Token;
 import com.emerycprimeau.model.User;
 import com.emerycprimeau.transfer.*;
+import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Cookie;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.NewCookie;
 import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.UUID;
@@ -93,20 +96,35 @@ public class WebService {
         return bd.howMany(id);
     }
 
-//
-//    @GET
-//    @Path("gameToComplete")
-//    public List<Game> getToCompleteList (@CookieParam(BD.Cookie) Cookie cookie) throws TokenNotFound {
-//        for(Token u: BD.listToken)
-//        {
-//            if(cookie.getValue().equals(u.token)) {
-//                System.out.println("getToComplete -> " + u.userId);
-//                return bd.getToCompleteList(u.userId);
-//            }
-//        }
-//
-//        throw new TokenNotFound("TNF");
-//    }
 
+    @POST
+    @Path("createCookie")
+    public Response createCookie () {
+        String id = UUID.randomUUID().toString();
+        String token = UUID.randomUUID().toString();
+        NewCookie nC = new NewCookie(BD.Cookie, token, "/","", "id token", 604800, true);
+        Token t = new Token(token, id, 604800);
+        BD.listToken.add(t);
+        System.out.println("Creation Token " + t.token + ". Creation cookie " + nC.getValue());
+        return Response.ok(new Gson().toJson(t), MediaType.APPLICATION_JSON).cookie(nC).build();
+    }
+
+    @GET
+    @Path("deleteCookie")
+    public Response toDelete (@CookieParam(BD.Cookie)Cookie cookie) throws TokenNotFound {
+
+        for(Token u: BD.listToken)
+        {
+            if(cookie.getValue().equals(u.token))
+            {
+                System.out.println("Suppression Token et Cookie " + u.token);
+                BD.listToken.remove(u);
+                NewCookie aSupprimer = new NewCookie(BD.Cookie, null, "/", null, null, 0, true);
+
+                return Response.ok(new Gson().toJson(true), MediaType.APPLICATION_JSON).cookie(aSupprimer).build();
+            }
+        }
+        throw new TokenNotFound("NoU");
+    }
 
 }

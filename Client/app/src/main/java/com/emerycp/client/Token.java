@@ -1,4 +1,4 @@
-package com.emerycprimeau.model;
+package com.emerycp.client;
 
 public class Token {
     public String token;
