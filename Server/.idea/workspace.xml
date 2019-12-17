@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee0ec6ce-8233-4773-ae71-a34ba24de204" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/emerycp/client/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/app/src/main/java/com/emerycp/client/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ee0ec6ce-8233-4773-ae71-a34ba24de204" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +130,7 @@
       <workItem from="1576092692182" duration="4052000" />
       <workItem from="1576097224080" duration="4782000" />
       <workItem from="1576184946559" duration="1707000" />
-      <workItem from="1576546708874" duration="1602000" />
+      <workItem from="1576546708874" duration="2251000" />
     </task>
     <servers />
   </component>
@@ -160,21 +156,25 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="808" y="413" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1576184989799" />
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom" timestamp="1576186655750">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="198" key="GridCell.Tab.0.bottom" timestamp="1576551297002">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1576551297002" />
     <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576186655750" />
-    <state width="1877" height="198" key="GridCell.Tab.0.center" timestamp="1576186655750">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="198" key="GridCell.Tab.0.center" timestamp="1576551297002">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1576551297002" />
     <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576186655750" />
-    <state width="1877" height="198" key="GridCell.Tab.0.left" timestamp="1576186655749">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="198" key="GridCell.Tab.0.left" timestamp="1576551297002">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1576551297002" />
     <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576186655749" />
-    <state width="1877" height="198" key="GridCell.Tab.0.right" timestamp="1576186655750">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state width="1877" height="198" key="GridCell.Tab.0.right" timestamp="1576551297002">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1576551297002" />
     <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576186655750" />
   </component>
 </project>
