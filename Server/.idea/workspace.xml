@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee0ec6ce-8233-4773-ae71-a34ba24de204" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/app/src/main/java/com/emerycp/client/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/emerycp/client/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/app/src/main/java/com/emerycp/client/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/java/com/emerycp/client/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/app/src/main/java/com/emerycp/client/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +134,7 @@
       <workItem from="1576092692182" duration="4052000" />
       <workItem from="1576097224080" duration="4782000" />
       <workItem from="1576184946559" duration="1707000" />
+      <workItem from="1576546708874" duration="1602000" />
     </task>
     <servers />
   </component>

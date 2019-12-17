@@ -45,13 +45,19 @@
                 android:id="@+id/create"/>
         </LinearLayout>
 
-
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            android:visibility="gone"
+            />
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textUser"
             android:text="Entrer un nom pour le créer ou gagner de l'argent."
+            android:visibility="visible"
             />
     </LinearLayout>
     <LinearLayout
@@ -74,12 +80,22 @@
             android:layout_height="wrap_content"
             android:text="Combien?"
             android:id="@+id/combienBtn"/>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:id="@+id/progressLine"
+            />
         <TextView
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/combienText"
             android:text="Suis-je riche?"
+            android:visibility="visible"
             />
     </LinearLayout>
     <LinearLayout

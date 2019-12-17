@@ -64,6 +64,13 @@ public class WebService {
     @POST
     @Path("init")
     public void toInit () {
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         System.out.println("Init complété!");
         bd.InitUsers();
     }
@@ -77,7 +84,14 @@ public class WebService {
 
     @POST
     @Path("create")
-    public Boolean create (LoginRequest user) throws NoMatch {
+    public Boolean create (LoginRequest user) {
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         System.out.println("Nouveau utilisateur au nom de -> " + user.user);
         return bd.create(user);
     }
@@ -92,6 +106,12 @@ public class WebService {
     @GET
     @Path("howmany/{id}")
     public User howMany (@PathParam("id")int id) throws NoMatch {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         System.out.println("Utilisateur suivant souhaite savoir combien il y en a au total -> " + id);
         return bd.howMany(id);
     }
